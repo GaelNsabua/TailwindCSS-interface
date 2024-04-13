@@ -7,11 +7,8 @@ module.exports = {
         primary: '#FF6363',
         secondary: {
           100: '#E2E2D5',
-          200: '#FFFFF5'
+          200: '#FFFEE5'
         }
-      },
-      fontFamily: {
-        body: ['merriweather']
       }
     },
   },
