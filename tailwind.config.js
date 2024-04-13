@@ -9,6 +9,9 @@ module.exports = {
           100: '#E2E2D5',
           200: '#FFFFF5'
         }
+      },
+      fontFamily: {
+        body: ['merriweather']
       }
     },
   },
