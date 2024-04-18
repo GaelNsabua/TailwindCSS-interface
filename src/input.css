@@ -27,3 +27,15 @@
     font-family: "Lobster", sans-serif;
     font-weight: 700;
 }
+
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Couleur de la piste de la barre de défilement */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #da5050;/* Couleur du pouce de la barre de défilement */
+}

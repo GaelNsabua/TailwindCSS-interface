@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="./output.css">
     <title>VEVICFOOD</title>
 </head>
-<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center">
+<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center backdrop-filter backdrop-blur-sm">
     <!-- content wrapper -->
-    <div class="bg-blue-300 w-almost h-almost overflow-y-scroll flex flex-col relative overflow-x-hidden">
+    <div class="bg-slate-300 w-almost h-almost flex flex-col overflow-x-hidden rounded-xl">
         <!-- logo and search bar container -->
-        <div class="mb-2 bg-red-400 fixed w-almost z-50">
-            <!-- logo container -->
-            <div>
-                <h1>VEVICFOOD</h1>
-            </div>
-            <!-- search bar container -->
-            <div>
-                <input type="search" name="search-bar" id="search-bar">
+        <div class="relative flex md:justify-center">
+            <div class="mb-2 fixed md:w-11/12 z-50 flex justify-between p-3">
+                <!-- logo container -->
+                <div class="bg-slate-500 p-2 rounded-2xl">
+                    <h1>VEVICFOOD</h1>
+                </div>
+                <!-- search bar container -->
+                <div class="w-3/4 bg-red-200 p-1 rounded-2xl">
+                    <input type="search" name="search-bar" id="search-bar" class="w-4/5 ml-10 bg-transparent outline-none">
+                </div>
             </div>
         </div>
+        
         <!-- menu, hero section and main container -->
-        <div class="bg-green-400 flex flex-row">
+        <div class="flex flex-row justify-end relative h-almost mr-2">
             <!-- menu container -->
-                <div class="bg-purple-600 mr-2 fixed z-50">
-                    <ul class="text-sm mt-2 mb-2 md:mt-4 hidden md:block" id="menu">
-                        <li class="py-1 menu-tag active">
+                <div class="mr-2 md:fixed h-almost z-50 left-0 w-fit ">
+                    <ul class="text-sm mt-2 mb-2 hidden md:block bg-red-500 ml-14 md:pt-4 md:mt-16 md:h-5/6 rounded-2xl" id="menu">
+                        <li class="py-1 menu-tag active ">
                             <a href="#" class="px-4 flex justify-start">
                                 <svg class="w-5 mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                     <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
@@ -73,9 +76,9 @@
             </div>
             
 
-            <main class="bg-gray-600 w-auto">
+            <main class="bg-gray-600 w-10/12 rounded-l-2xl h-main overflow-y-auto md:mt-16 border-b-4 border-transparent">
                 <!-- hero section container  -->
-                <div class="text-center md:text-left pt-44 pb-12 pl-10 drop-shadow-md md:mt-14 mt-12 w-screen md:w-auto bg-back bg-cover bg-no-repeat bg-center">
+                <div class="text-center md:text-left pt-44 pb-12 pl-10 drop-shadow-md md:mt-16 mt-12 w-screen md:w-auto bg-back bg-cover bg-no-repeat bg-center">
                     <header>
                         <h2 class="text-emerald-400 font-style uppercase  text-5xl md:text-7xl font-extrabold">Recipes</h2>
                         <h3 class="text-4xl font-semibold font-style text-blue-400 mt-2">For VevicFood</h3>
@@ -135,7 +138,7 @@
                     </div>
     
                     <div class="flex justify-center">
-                        <div class="btn bg-gray-400 text-gray-800 p-2 rounded-lg hover:bg-slate-800 text-white transition ease-out duration-500">Load more</div>
+                        <div class="btn bg-gray-400 p-2 rounded-lg hover:bg-slate-800 text-white transition ease-out duration-500">Load more</div>
                     </div>
                 </div>
             </main>

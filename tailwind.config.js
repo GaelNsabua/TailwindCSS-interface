@@ -19,6 +19,7 @@ module.exports = {
       },
       height: {
         almost: "95%",
+        main: "90%",
       }
     },
   },
