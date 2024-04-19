@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .card{
-    @apply rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300 backdrop-blur-sm backdrop-saturate-180 bg-gray-800/70 border border-gray-300/30;
+    @apply rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300 bg-gray-600/50;
 }
 
 .badge{
@@ -16,7 +16,7 @@
 }
 
 .active{
-    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-gray-200 ;
+    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-green-200 ;
 }
 
 .menu-tag{
@@ -37,5 +37,5 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #da5050;/* Couleur du pouce de la barre de défilement */
+    background: #6e6a6a9f;/* Couleur du pouce de la barre de défilement */
 }
