@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .card{
-    @apply bg-gray-100 rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300;
+    @apply rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300 backdrop-blur-sm backdrop-saturate-180 bg-gray-800/70 border border-gray-300/30;
 }
 
 .badge{
@@ -16,11 +16,11 @@
 }
 
 .active{
-    @apply border-r-4 border-red-600 md:bg-gray-300 bg-gray-400 py-1 font-bold text-gray-900 ;
+    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-gray-200 ;
 }
 
 .menu-tag{
-    @apply transition ease-out duration-500 hover:bg-gray-300 md:hover:bg-gray-200;
+    @apply transition ease-out duration-500 hover:bg-gray-300 md:hover:bg-gray-500/70;
 }
 
 .font-style{

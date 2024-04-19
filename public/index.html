@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="./output.css">
     <title>VEVICFOOD</title>
 </head>
-<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center backdrop-filter backdrop-blur-sm">
+<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center ">
     <!-- content wrapper -->
-    <div class="bg-slate-300 w-almost h-almost flex flex-col overflow-x-hidden rounded-xl">
+    <div class="w-almost h-almost flex flex-col overflow-x-hidden rounded-xl backdrop-blur-sm backdrop-saturate-180 bg-gray-600/70 border border-gray-300/30">
         <!-- logo and search bar container -->
-        <div class="relative flex md:justify-center">
-            <div class="mb-2 fixed md:w-11/12 z-50 flex justify-between p-3">
+        <div class="flex md:justify-center relative mb-2">
+            <div class="mt-1 md:w-main z-50 flex justify-evenly pl-5 p-2 fixed rounded-xl backdrop-blur-sm backdrop-saturate-180 bg-gray-700/70 border border-gray-300/30">
                 <!-- logo container -->
-                <div class="bg-slate-500 p-2 rounded-2xl">
+                <!-- Defining a font size for the text using JIT(Just In Time) compiler -->
+                <div class="p-2 mr-10 rounded-2xl text-blue-300 text-base font-style border border-gray-300/30"> 
                     <h1>VEVICFOOD</h1>
                 </div>
                 <!-- search bar container -->
-                <div class="w-3/4 bg-red-200 p-1 rounded-2xl">
+                <div class="w-3/4 rounded-2xl py-2 border border-gray-300/30">
                     <input type="search" name="search-bar" id="search-bar" class="w-4/5 ml-10 bg-transparent outline-none">
                 </div>
             </div>
         </div>
         
         <!-- menu, hero section and main container -->
-        <div class="flex flex-row justify-end relative h-almost mr-2">
+        <div class="flex flex-row h-main mr-2">
             <!-- menu container -->
-                <div class="mr-2 md:fixed h-almost z-50 left-0 w-fit ">
-                    <ul class="text-sm mt-2 mb-2 hidden md:block bg-red-500 ml-14 md:pt-4 md:mt-16 md:h-5/6 rounded-2xl" id="menu">
+                <div class="mr-2 w-fit px-4 flex justify-center">
+                    <ul class="text-sm font-serif text-gray-900 mt-16 mb-2 hidden md:block md:pt-4 md:w-fit  md:h-almost rounded-2xl backdrop-blur-sm backdrop-saturate-180 bg-gray-700/70 border border-gray-300/30 whitespace-nowrap" id="menu">
                         <li class="py-1 menu-tag active ">
                             <a href="#" class="px-4 flex justify-start">
                                 <svg class="w-5 mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -76,9 +77,9 @@
             </div>
             
 
-            <main class="bg-gray-600 w-10/12 rounded-l-2xl h-main overflow-y-auto md:mt-16 border-b-4 border-transparent">
+            <main class="w-full md:mr-2 rounded-l-2xl h-almost overflow-y-auto md:mt-16 backdrop-blur-sm backdrop-saturate-180 bg-gray-700/70 border border-gray-300/30">
                 <!-- hero section container  -->
-                <div class="text-center md:text-left pt-44 pb-12 pl-10 drop-shadow-md md:mt-16 mt-12 w-screen md:w-auto bg-back bg-cover bg-no-repeat bg-center">
+                <div class="text-center md:text-left pt-44 pb-12 pl-10 md:mt-4 mt-12 w-screen md:w-auto bg-back bg-cover bg-no-repeat bg-center">
                     <header>
                         <h2 class="text-emerald-400 font-style uppercase  text-5xl md:text-7xl font-extrabold">Recipes</h2>
                         <h3 class="text-4xl font-semibold font-style text-blue-400 mt-2">For VevicFood</h3>
