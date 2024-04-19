@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./output.css">
     <title>VEVICFOOD</title>
 </head>
-<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center ">
+<body class="w-full h-screen bg-bodyBack bg-cover bg-no-repeat bg-center bg-fixed backdrop-blur-[1px] flex justify-center items-center ">
     <!-- content wrapper -->
-    <div class="w-almost h-almost flex flex-col overflow-x-hidden rounded-xl backdrop-blur-sm backdrop-saturate-150 bg-gray-400/50 border border-gray-300/30">
+    <div class="w-almost h-almost flex flex-col overflow-x-hidden rounded-xl backdrop-blur-md backdrop-saturate-150 bg-gray-400/40 border-2 border-gray-300/30">
         <!-- logo and search bar container -->
-        <div class="flex justify-center md:relative mb-2">
-            <div class="mt-1 md:w-main z-50 flex justify-evenly pl-5 p-2 md:fixed rounded-xl backdrop-blur-sm backdrop-saturate-50 bg-gray-700/70 border border-gray-300/30">
+        <div class="flex justify-center md:relative md:mb-2">
+            <div class="mt-1 md:w-main z-50 flex justify-between md:justify-evenly pl-5 p-2 md:fixed rounded-xl backdrop-blur-sm backdrop-saturate-50 bg-gray-700/80 md:border md:border-gray-300/30">
                 <!-- logo container -->
                 <!-- Defining a font size for the text using JIT(Just In Time) compiler -->
                 <div class="p-2 mr-10 rounded-2xl text-blue-300 text-base font-style border border-gray-300/30"> 
@@ -23,14 +23,20 @@
                 <div class="w-3/4 rounded-2xl py-2 border border-gray-300/30">
                     <input type="search" name="search-bar" id="search-bar" class="w-4/5 ml-10 bg-transparent outline-none">
                 </div>
+                <!-- Menu icon -->
+                <div class="p-2 ml-5 text-blue-300 cursor-pointer md:hidden hover:bg-gray-400/40 rounded-lg border border-gray-300/30" id="menu-btn">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                      </svg>                          
+                </div>
             </div>
         </div>
         
         <!-- menu, hero section and main container -->
-        <div class="flex flex-row h-main mr-2">
+        <div class="flex md:flex-row flex-col h-main mx-2 md:mr-2">
             <!-- menu container -->
-                <div class="mr-2 w-fit px-4 flex justify-center">
-                    <ul class="text-sm font-serif text-gray-800 mt-16 mb-2 hidden md:block md:pt-4 md:w-fit  md:h-almost rounded-2xl shadow-lg backdrop-blur-sm backdrop-saturate-50 bg-gray-500/40 border border-gray-300/30 whitespace-nowrap" id="menu">
+                <div class="mr-2 md:w-fit w-full md:h-full px-4 md:flex md:justify-center">
+                    <ul class="text-sm font-serif text-gray-800 md:mt-16 mb-2 hidden md:block md:pt-4 md:w-fit  md:h-almost md:rounded-2xl rounded-b-2xl shadow-lg backdrop-blur-sm backdrop-saturate-50 bg-gray-500/40 border border-gray-300/30 whitespace-nowrap" id="menu">
                         <li class="py-1 pr-3 menu-tag active ">
                             <a href="#" class="px-4 flex justify-start">
                                 <svg class="w-5 mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -77,9 +83,9 @@
             </div>
             
 
-            <main class="w-full md:mr-2 rounded-l-2xl h-almost overflow-y-auto md:mt-16 shadow-lg backdrop-blur-sm backdrop-saturate-50 bg-gray-500/50 border border-gray-300/30">
+            <main class="w-full md:mr-2 md:rounded-r-none rounded-2xl h-full md:h-almost overflow-y-auto md:mt-16 shadow-lg backdrop-blur-sm backdrop-saturate-50 bg-gray-500/50 md:border md:border-gray-300/30">
                 <!-- hero section container  -->
-                <div class="text-center md:text-left pt-44 pb-12 pl-10 md:mt-4 mt-12 w-screen md:w-auto bg-back bg-cover bg-no-repeat bg-center">
+                <div class="text-center md:text-left pt-44 pb-12 pl-10 w-auto bg-back bg-cover bg-no-repeat bg-center">
                     <header>
                         <h2 class="text-emerald-400 font-style uppercase  text-5xl md:text-7xl font-extrabold">Recipes</h2>
                         <h3 class="text-4xl font-semibold font-style text-blue-400 mt-2">For VevicFood</h3>
