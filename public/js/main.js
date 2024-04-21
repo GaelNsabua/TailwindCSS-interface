@@ -21,6 +21,24 @@ $(function(){
         // Here we add the class active to the element the user has clicked on 
         $(this).addClass("active")
     })
-    
+    // Here we handle menu texts hidden or display 
+    // Here we get all menu tags text
+    let menuTagsText = $(".menu-tag span")
+    // Here we get all menu tags icons 
+    let menuTagsIcons = $(".menu-tag svg")
+    // Here we get the whole main section 
+    let mainSection = $("main")
+    // Here we add a hover event listener on the menu
+        menu.on("mouseover", function(){
+        menuTagsText.removeClass("md:hidden")
+        menuTagsIcons.addClass("mr-5")
+        allMenuTags.addClass("py-3")
+    })
+    // Here we add a hover event listener on the main section 
+        mainSection.on('mouseover', function(){
+            menuTagsText.addClass("md:hidden")
+            menuTagsIcons.removeClass("mr-5")
+            allMenuTags.removeClass("py-3")
+    })
 })
 

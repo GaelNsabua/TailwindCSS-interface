@@ -11,8 +11,8 @@ module.exports = {
         }
       },
       backgroundImage: {
-        back: "url('images/img-3.jpeg')",
-        bodyBack: "url('images/img-6.jpeg')"
+        back: "url('images/img-8.jpeg')",
+        bodyBack: "url('images/img-13.jpeg')"
       },
       width: {
         almost: "97%",

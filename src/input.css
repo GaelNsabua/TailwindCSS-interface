@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .card{
-    @apply rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300 bg-gray-600/60;
+    @apply rounded-xl overflow-hidden shadow-md relative hover:shadow-xl transform hover:scale-105 cursor-pointer transition ease-out duration-300 bg-gray-600/60 md:border md:border-gray-300/30;
 }
 
 .badge{
@@ -16,11 +16,11 @@
 }
 
 .active{
-    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-green-200 ;
+    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-green-200  animate-bounce ;
 }
 
 .menu-tag{
-    @apply transition ease-out duration-500 hover:bg-gray-300 md:hover:bg-gray-500/70;
+    @apply transition ease-out duration-500 hover:bg-gray-300 md:hover:bg-gray-500/70 md:mb-2;
 }
 
 .font-style{
@@ -29,13 +29,15 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* Largeur de la barre de défilement */
+    width: 5px; /* Largeur de la barre de défilement */
   }
+
+  ::-webkit-scrollbar
 
   ::-webkit-scrollbar-track {
     background: transparent; /* Couleur de la piste de la barre de défilement */
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #6e6a6a9f;/* Couleur du pouce de la barre de défilement */
+    background: #96faf59f;/* Couleur du pouce de la barre de défilement */
 }
