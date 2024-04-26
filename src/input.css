@@ -16,7 +16,7 @@
 }
 
 .active{
-    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-green-200  animate-bounce ;
+    @apply border-r-4 border-green-300 bg-gray-800/70 font-bold text-green-200  md:animate-bounce ;
 }
 
 .menu-tag{
