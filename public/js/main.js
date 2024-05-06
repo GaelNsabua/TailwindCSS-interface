@@ -55,7 +55,8 @@ $(function(){
         mainSection.on('mouseover', function(){
             menuTagsText.addClass("md:hidden")
             menuTagsIcons.removeClass("mr-5")
-            allMenuTags.removeClass("py-3")    
+            allMenuTags.removeClass("py-3") 
+            // $("#last-receipe-container img").removeClass("transform hover:scale-105")
     })
 
     // This part helps to show the form for adding recipes 
@@ -111,13 +112,17 @@ $(function(){
         // Here we send the new recipe to database so that to store it 
         AddReceipeToDB(newRecipe, null, addStatus)        
  })
+
+ latestReceipeContainer.on("mouseover", function(){
+    $("#last-receipe-container img").addClass("transform hover:scale-105")
+ })
 })
 
 // This function helps to add and show recipes in the recipe content 
 export function addReceipe(recipe){
     let latestReceipeContainer = $("#last-receipe-container")
     latestReceipeContainer.append(`<div class="card">
-    <a href="images/img-3.jpeg"><img src="${recipe.image}" alt="VevicFood Recipe" title="Click here" class="w-full h-35 sm:h-48 object-cover"></a>
+    <img src="${recipe.image}" alt="VevicFood Recipe" title="Click here" class="w-full h-35 sm:h-48 object-cover">
     <div class="m-4 rounded-t-md">
         <span class="font-bold">${recipe.name}</span>
         <span class="block text-blue-100 text-sm">Recipe by Vevic</span>
