@@ -1249,6 +1249,7 @@ video {
   .sm\:h-48 {
     height: 12rem;
   }
+
 }
 
 @media (min-width: 768px) {
